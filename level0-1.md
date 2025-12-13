@@ -1,7 +1,6 @@
 # level 0-1
 
-### to read the directories and retrive the password for the next level
-
+### To log into the system find the file readme and retrive password
 
 ```
 bandit0@bandit:~$ ls
@@ -15,13 +14,18 @@ contribute to the OverTheWire community so we can keep these games free!
 
 The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
+bandit0@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 
 ```
 
 ## Commands used
 
-1. ls
-2. cat readme
+1.ssh -p 2220 bandit0@bandit.labs.overthewire.org
+2. ls
+3. cat readme
+4. exit
  
 
  

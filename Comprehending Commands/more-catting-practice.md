@@ -1,4 +1,4 @@
-## commands~more-catting-practice
+## more-catting-practice
 **Flag:** 'pwn.college{kDoJ4zoJRaXNTUNqRuOQKUuusdv.QXwITO0wSOwEzNzEzW}'
 
 ```

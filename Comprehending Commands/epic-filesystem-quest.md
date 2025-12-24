@@ -1,6 +1,10 @@
 ## epic-filesystem-quest
+Your first clue is in /. Head on over there.
+Look around with ls. There'll be a file named HINT or CLUE or something along those lines!
+cat that file to read the clue!Depending on what the clue says, head on over to the next directory (or don't!).
+Follow the clues to the flag!
 
-**Flag:** 'pwn.college{wDLuob2OylogJoOBcYMfKbtiQoq.QXxcTN0wSOwEzNzEzW}'
+**Flag:** 'pwn.college{kLMW5d4d-_DCgEeJsklfidB3p7C.QX5IDO0wSOwEzNzEzW}'
 
 ```
 hacker@commands~an-epic-filesystem-quest:~$ cd /
@@ -52,6 +56,30 @@ Congratulations, you found the clue!
 The next clue is in: /usr/lib/x86_64-linux-gnu/perl/5.30.0/auto/ODBM_File
 
 The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/usr/share/javascript/mathjax/localization/bg$ cd /usr/lib/x86_64-linux-gnu/perl/5.30.0/auto/ODBM_File
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/perl/5.30.0/auto/ODBM_File$ ls -a
+.  ..  .INSIGHT  ODBM_File.so
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/perl/5.30.0/auto/ODBM_File$ cat .INSIGHT
+Tubular find!
+The next clue is in: /opt/linux/linux-5.4/arch/ia64/oprofile
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/perl/5.30.0/auto/ODBM_File$ cd /opt/linux/linux-5.4/arch/ia64/oprofile
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/ia64/oprofile$ ls -a
+.  ..  Makefile  POINTER  backtrace.c  init.c  perfmon.c
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/ia64/oprofile$ cat POINTER
+Lucky listing!
+The next clue is in: /opt/linux/linux-5.4/arch/arm/mach-pxa/include
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/ia64/oprofile$ cd /opt/linux/linux-5.4/arch/arm/mach-pxa/include
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/arm/mach-pxa/include$ ls -a
+.  ..  CLUE  mach
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/arm/mach-pxa/include$ CLUE
+bash: CLUE: command not found
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/arch/arm/mach-pxa/include$ cat CLUE
+CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
+It is: pwn.college{kLMW5d4d-_DCgEeJsklfidB3p7C.QX5IDO0wSOwEzNzEzW}
 ```
 
 
